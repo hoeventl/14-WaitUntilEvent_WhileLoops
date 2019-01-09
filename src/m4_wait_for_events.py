@@ -40,8 +40,8 @@ def main():
     """ Calls the   TEST   functions in this module. """
     # run_test_sum_until_prime_input()
     # run_test_next_prime()
-    run_test_prime_gap()
-    # run_test_wait_for_sum_of_cubes()
+    # run_test_prime_gap()
+    run_test_wait_for_sum_of_cubes()
 
 
 def is_prime(n):
@@ -496,6 +496,14 @@ def wait_for_sum_of_cubes(x):
     # (or look up) a formula that would allow a faster computation.
     # But no fair using any such approach in this implementation.
     # -------------------------------------------------------------------------
+    k = 0
+    total = 0
+    while True:
+        k = k + 1
+        if total > x:
+            return k
+        total = total + k ** 3
+
 
 
 # -----------------------------------------------------------------------------
