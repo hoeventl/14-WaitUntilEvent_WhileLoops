@@ -496,14 +496,14 @@ def wait_for_sum_of_cubes(x):
     # (or look up) a formula that would allow a faster computation.
     # But no fair using any such approach in this implementation.
     # -------------------------------------------------------------------------
-    k = 0
+    k = 1
     total = 0
     while True:
-        k = k + 1
+
         if total > x:
             return k
         total = total + k ** 3
-
+        k = k + 1
 
 
 # -----------------------------------------------------------------------------
